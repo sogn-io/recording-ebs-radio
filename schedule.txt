@@ -1,0 +1,9 @@
+50 5 * * 1-6 /record.sh "포켓 잉글리쉬" 10
+ 0 6 * * 1-6 /record.sh "김대균 토익킹" 20
+20 6 * * 1-6 /record.sh "Easy Writing" 20
+40 6 * * 1-6 /record.sh "귀가 트이는 영어" 20
+ 0 7 * * 1-6 /record.sh "입이 트이는 영어" 20
+20 7 * * 1-6 /record.sh "Easy English" 20
+40 7 * * 1-6 /record.sh "Power English" 20
+ 0 1 * * 0,2-6 /record.sh "입이 트이는 영문법" 20
+20 1 * * 0,2-6 /record.sh "김과장 영어로 날다" 20
