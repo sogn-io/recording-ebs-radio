@@ -1,0 +1,10 @@
+---
+version: "2"
+services:
+    ebs-recorder:
+        build: .
+        container_name: ebs-recorder
+        volumes:
+            - ./schedule.txt:/schedule.txt
+            - /ebs-recorder:/outputs
+        restart: unless-stopped

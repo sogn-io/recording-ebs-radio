@@ -10,10 +10,10 @@ RUN cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 ADD record.sh /record.sh
 ADD entry.sh /entry.sh
-ADD schedule.txt /schedule.txt
+#ADD schedule.txt /schedule.txt
 VOLUME ["/outputs"]
 
 RUN chmod 755 /record.sh /entry.sh
-RUN /usr/bin/crontab /schedule.txt
+#RUN /usr/bin/crontab /schedule.txt
 
 CMD ["/entry.sh"]
